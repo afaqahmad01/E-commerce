@@ -73,19 +73,29 @@ const Footer = () => {
             <h2 className="mb-6 text-md font-semibold text-white">Account</h2>
             <ul className="text-white text-sm">
               <li className="mb-4">
-                <p className="w-44">My Account</p>
+                <a href="#" className="w-44">
+                  My Account
+                </a>
               </li>
               <li className="mb-4">
-                <p className="w-44">Login / Register</p>
+                <a href="#" className="w-44">
+                  Login / Register
+                </a>
               </li>
               <li className="mb-4">
-                <p className="w-44">Cart</p>
+                <a href="#" className="w-44">
+                  Cart
+                </a>
               </li>
               <li className="mb-4">
-                <p className="w-44">Wishlist</p>
+                <a href="#" className="w-44">
+                  Wishlist
+                </a>
               </li>
               <li className="mb-4">
-                <p className="w-44">Shop</p>
+                <a href="#" className="w-44">
+                  Shop
+                </a>
               </li>
             </ul>
           </div>
@@ -95,16 +105,24 @@ const Footer = () => {
             </h2>
             <ul className="text-white text-sm">
               <li className="mb-4">
-                <p className="w-44">Privacy Policy</p>
+                <a href="#" className="w-44">
+                  Privacy Policy
+                </a>
               </li>
               <li className="mb-4">
-                <p className="w-44">Terms of Use</p>
+                <a href="#" className="w-44">
+                  Terms of Use
+                </a>
               </li>
               <li className="mb-4">
-                <p className="w-44">FAQ</p>
+                <a href="#" className="w-44">
+                  FAQ
+                </a>
               </li>
               <li className="mb-4">
-                <p className="w-44">Contact</p>
+                <a href="#" className="w-44">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -120,22 +138,28 @@ const Footer = () => {
               </li>
               <li className="mb-4">
                 <div className="w-44 flex">
-                  <img
-                    src="https://i.imgur.com/PdNUytb.png"
-                    alt="QR-CODE"
-                    className="w-16 h-16"
-                  />
+                  <a href="#">
+                    <img
+                      src="https://i.imgur.com/PdNUytb.png"
+                      alt="QR-CODE"
+                      className="w-16 h-16"
+                    />
+                  </a>
                   <div>
-                    <img
-                      src="https://i.imgur.com/01XMcPK.png"
-                      alt=""
-                      className="pl-2 h-8 w-28 pb-1"
-                    />
-                    <img
-                      src="https://i.imgur.com/EdDMwoS.png"
-                      alt=""
-                      className="pl-2 h-8 w-28 pt-1"
-                    />
+                    <a href="#">
+                      <img
+                        src="https://i.imgur.com/01XMcPK.png"
+                        alt=""
+                        className="pl-2 h-8 w-28 pb-1"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="https://i.imgur.com/EdDMwoS.png"
+                        alt=""
+                        className="pl-2 h-8 w-28 pt-1"
+                      />
+                    </a>
                   </div>
                 </div>
               </li>
