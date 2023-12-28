@@ -37,7 +37,7 @@ const NavBar = () => {
       {/* Sales Black Bar */}
 
       {/* NavBar */}
-      <div className="pt-6 border-b ">
+      <div className="pt-5 border-b ">
         <nav className="bg-white border-gray-200 w-[86vw] ml-auto mr-auto">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
