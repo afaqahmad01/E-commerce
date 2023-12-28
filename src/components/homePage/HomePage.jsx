@@ -1,7 +1,13 @@
+import Layout from "../Layout/Layout";
+
 const HomePage = () => {
   return (
     <>
-      <h1>HomePage</h1>
+      <Layout>
+        <div>
+          <p>HomePage</p>
+        </div>
+      </Layout>
     </>
   );
 };
