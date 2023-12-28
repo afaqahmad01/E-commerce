@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <NavBar />
-      <div className="h-auto border border-black">{children}</div>
+      <div className="h-auto">{children}</div>
       <Footer />
     </>
   );

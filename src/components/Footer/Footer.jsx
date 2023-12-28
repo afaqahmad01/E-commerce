@@ -165,11 +165,10 @@ const Footer = () => {
               </li>
               <li className="mb-4">
                 <div className="w-44">
-                  {" "}
-                  <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+                  <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
                     <a
                       href="#"
-                      class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                      className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -183,15 +182,15 @@ const Footer = () => {
                           fill="white"
                         />
                       </svg>
-                      <span class="sr-only">Facebook page</span>
+                      <span className="sr-only">Facebook page</span>
                     </a>
-                    <a href="#" class="hover:text-gray-900">
-                      <CiTwitter style={{ width: "27px", height: "27px" }} />
-                      <span class="sr-only">Twitter page</span>
+                    <a href="#" className="hover:text-gray-900">
+                      <CiTwitter className="w-[27px] h-[27px]" />
+                      <span className="sr-only">Twitter page</span>
                     </a>
                     <a
                       href="#"
-                      class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                      className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -217,12 +216,12 @@ const Footer = () => {
                           fill="white"
                         />
                       </svg>
-                      <span class="sr-only">Instagram page</span>
+                      <span className="sr-only">Instagram page</span>
                     </a>
 
                     <a
                       href="#"
-                      class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                      className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +235,7 @@ const Footer = () => {
                           fill="white"
                         />
                       </svg>
-                      <span class="sr-only">LinkedIn Page</span>
+                      <span className="sr-only">LinkedIn Page</span>
                     </a>
                   </div>
                 </div>
@@ -246,7 +245,7 @@ const Footer = () => {
         </div>
         <div className="opacity-10 bg-white h-[0.5px]  w-full"></div>
         <div className="px-4 py-6  flex justify-center items-center bg-black ">
-          <p className="text-sm text-[#FFF]">
+          <p className="text-sm text-[#FFF] opacity-30">
             © Copyright Rimel 2022. All right reserved
           </p>
         </div>
