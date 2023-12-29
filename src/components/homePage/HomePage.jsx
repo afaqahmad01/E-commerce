@@ -1,9 +1,11 @@
-import Products from "../ProductLists/Products";
 import Layout from "../Layout/Layout";
 import SideBar from "../SideBar/SideBar";
 import Slider from "../Slider/Slider";
 import TodayProducts from "../ProductLists/TodayProducts";
 import Categories from "../Categories/Categories";
+import MonthProducts from "../ProductLists/MonthProducts";
+import OurProducts from "../ProductLists/OurProducts";
+import Sale from "../Sale/Sale";
 
 const HomePage = () => {
   return (
@@ -17,6 +19,10 @@ const HomePage = () => {
           <div>
             <TodayProducts />
             <Categories />
+            <MonthProducts />
+            <Sale />
+
+            <OurProducts />
           </div>
         </div>
       </Layout>
