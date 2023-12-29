@@ -1,30 +1,35 @@
+import React, { useRef, useState } from "react";
 import "../../App.css";
 import Products from "./Products";
-import CountUp from "react-countup";
-import { ProductsData } from "../JsonFiles/TodayProducts";
-import { useEffect, useRef, useState } from "react";
 
-const TodayProducts = () => {
+import { AllProducts } from "../JsonFiles/AllProducts";
+
+const OurProducts = () => {
   const containerRef1 = useRef(null);
-  const [style, setStyle] = useState("");
+  const containerRef2 = useRef(null);
   const [buttonStyle, setButtonStyle] = useState("");
 
   const [scrollPosition1, setScrollPosition1] = useState(0);
-
+  const [scrollPosition2, setScrollPosition2] = useState(0);
+  const [style, setStyle] = useState("");
   const scrollLeft = () => {
-    if (containerRef1.current) {
+    if (containerRef1.current && containerRef2.current) {
       setScrollPosition1((prevPosition) => prevPosition - 550);
+      setScrollPosition2((prevPosition) => prevPosition - 550);
       containerRef1.current.scrollLeft -= 550;
+      containerRef2.current.scrollLeft -= 550;
     }
   };
 
   const scrollRight = () => {
-    if (containerRef1.current) {
+    if (containerRef1.current && containerRef2.current) {
       setScrollPosition1((prevPosition) => prevPosition + 550);
-
+      setScrollPosition2((prevPosition) => prevPosition + 550);
       containerRef1.current.scrollLeft += 550;
+      containerRef2.current.scrollLeft += 550;
     }
   };
+
   const [showAllProducts, setShowAllProducts] = useState(false);
 
   const handleViewAllClick = () => {
@@ -37,35 +42,14 @@ const TodayProducts = () => {
     <>
       <div className="mb-20">
         <h1 className="font-[600] not-italic border-l-[13px] mt-16 pl-6 ml-4 font-[popins] text-md mb-5 border-[#DB4444] text-[#DB4444]">
-          Today's
+          Our Products
         </h1>
-        <div className="flex gap-28">
-          <h1 className=" not-italic ml-3 font-[Inter] text-3xl font-bold my-5  text-black  ">
-            Flash Sales
-          </h1>
-          <div>
-            <h1 className="text-[10px] mt-3">
-              Days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minutes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seconds
-            </h1>
-            <div className="flex text-3xl font-bold ">
-              <p className="font-[Inter]">3</p>
-              <p className="text-[#DB4444] text-xl mt-1"> &nbsp; : &nbsp; </p>
-              <p className="font-[Inter]">23</p>
-              <p className="text-[#DB4444] text-xl mt-1"> &nbsp; : &nbsp; </p>
-              <p className="font-[Inter]">19</p>
-              <p className="text-[#DB4444] text-xl mt-1"> &nbsp; : &nbsp; </p>
-              <CountUp
-                start={60}
-                duration={600}
-                end={0}
-                className="font-[Inter]"
-              ></CountUp>
-            </div>
-          </div>
-        </div>
+        <h1 className="not-italic ml-3 font-[Inter] text-3xl font-bold my-5 text-black">
+          Explore Our Products
+        </h1>
         <div className={`${buttonStyle} absolute right-14 -mt-10`}>
           <button
-            className="mr-4 rounded-full transform -translate-y-1/2  px-4 py-2"
+            className="mr-4 rounded-full transform -translate-y-1/2    px-4 py-2"
             onClick={scrollLeft}
           >
             <svg
@@ -105,14 +89,21 @@ const TodayProducts = () => {
             </svg>
           </button>
         </div>
-
-        <div className="ml-3">
+        <div className="ml-3 flex flex-col">
           <Products
-            ProductsData={ProductsData}
+            ProductsData={AllProducts}
             containerRef={containerRef1}
             scrollPosition={scrollPosition1}
             newStyle={style}
           />
+          <div className="-mt-10">
+            <Products
+              ProductsData={AllProducts}
+              containerRef={containerRef2}
+              scrollPosition={scrollPosition2}
+              newStyle={style}
+            />
+          </div>
         </div>
         <div className="flex justify-center items-center">
           <button
@@ -127,4 +118,4 @@ const TodayProducts = () => {
   );
 };
 
-export default TodayProducts;
+export default OurProducts;
