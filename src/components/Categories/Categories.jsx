@@ -42,10 +42,10 @@ const Categories = () => {
   return (
     <>
       <div className="mb-20">
-        <h1 className="font-[600] not-italic border-l-[13px] mt-10 pl-6 ml-6 font-[popins] text-md mb-4 border-[#DB4444] text-[#DB4444]">
+        <h1 className="font-[600] not-italic border-l-[13px] mt-10 pl-6 ml-6 font-poppins text-md mb-4 border-[#DB4444] text-[#DB4444]">
           Categories
         </h1>
-        <h1 className=" not-italic ml-6  font-[Inter] text-3xl font-bold mb-16 text-black  ">
+        <h1 className=" not-italic ml-6  font-Inter text-3xl font-bold mb-16 text-black  ">
           Browse By Category
         </h1>
 

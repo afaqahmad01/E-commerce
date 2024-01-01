@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   return (
     <>
       {/* Sales Black Bar */}
-      <div className="bg-black text-[#FAFAFA] tetx-[8px] flex justify-center h-10 gap-[200px] items-center">
+      <div className="bg-black text-[#FAFAFA] tetx-[8px] flex font-poppins justify-center h-10 gap-[200px] items-center">
         <div className="gap-3 flex flex-row">
           <p className="pl-[200px]">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           </p>
-          <button className=" border-b font-bold">ShopNow</button>
+          <button className=" hover:border-b font-bold">ShopNow</button>
         </div>
 
         <button
@@ -41,19 +43,19 @@ const NavBar = () => {
         <nav className="bg-white border-gray-200 w-[86vw] ml-auto mr-auto">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
-              Exclusive
+              <Link to="/">Exclusive</Link>
             </span>
-            <div className="flex md:order-2 gap-4">
+            <div className="flex order-2 gap-4">
               <div className="relative w-full">
                 <input
                   type="search"
                   id="search-dropdown"
-                  className="block p-2.5 w-full z-20 text-[12px] text-gray-900 bg-gray-50 rounded-lg font-[popins] "
+                  className="block p-2.5 w-[200px] z-20 text-[12px] text-gray-900 bg-gray-50 rounded-lg font-poppins "
                   placeholder="What are you looking for?"
                 />
                 <button
                   type="submit"
-                  className="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-black rounded-e-lg  "
+                  className="absolute top-0 end-0 p-2.5 pl-3 text-sm font-medium h-full text-black rounded-e-lg  "
                 >
                   <svg
                     className="w-4 h-4"
@@ -132,7 +134,7 @@ const NavBar = () => {
               className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
               id="navbar-search"
             >
-              <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+              <ul className="flex flex-col p-4 md:p-0 mt-4 font-poppins font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                 <li>
                   <a
                     href="#"

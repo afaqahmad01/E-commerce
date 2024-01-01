@@ -6,6 +6,7 @@ import Categories from "../Categories/Categories";
 import MonthProducts from "../ProductLists/MonthProducts";
 import OurProducts from "../ProductLists/OurProducts";
 import Sale from "../Sale/Sale";
+import Featured from "../Featured/Featured";
 
 const HomePage = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage = () => {
             <Sale />
 
             <OurProducts />
+            <Featured />
           </div>
         </div>
       </Layout>

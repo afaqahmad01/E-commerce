@@ -36,11 +36,11 @@ const TodayProducts = () => {
   return (
     <>
       <div className="mb-20">
-        <h1 className="font-[600] not-italic border-l-[13px] mt-16 pl-6 ml-4 font-[popins] text-md mb-5 border-[#DB4444] text-[#DB4444]">
+        <h1 className="font-[600] not-italic border-l-[13px] mt-16 pl-6 ml-4 font-poppins text-md mb-5 border-[#DB4444] text-[#DB4444]">
           Today's
         </h1>
         <div className="flex gap-28">
-          <h1 className=" not-italic ml-3 font-[Inter] text-3xl font-bold my-5  text-black  ">
+          <h1 className=" not-italic ml-3 font-Inter text-3xl font-bold my-5  text-black  ">
             Flash Sales
           </h1>
           <div>
@@ -48,24 +48,24 @@ const TodayProducts = () => {
               Days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minutes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seconds
             </h1>
             <div className="flex text-3xl font-bold ">
-              <p className="font-[Inter]">3</p>
+              <p className="font-Inter">3</p>
               <p className="text-[#DB4444] text-xl mt-1"> &nbsp; : &nbsp; </p>
-              <p className="font-[Inter]">23</p>
+              <p className="font-Inter">23</p>
               <p className="text-[#DB4444] text-xl mt-1"> &nbsp; : &nbsp; </p>
-              <p className="font-[Inter]">19</p>
+              <p className="font-Inter">19</p>
               <p className="text-[#DB4444] text-xl mt-1"> &nbsp; : &nbsp; </p>
               <CountUp
                 start={60}
                 duration={600}
                 end={0}
-                className="font-[Inter]"
+                className="font-Inter"
               ></CountUp>
             </div>
           </div>
         </div>
         <div className={`${buttonStyle} absolute right-14 -mt-10`}>
           <button
-            className="mr-4 rounded-full transform -translate-y-1/2  px-4 py-2"
+            className="mr-3 bg-[#F5F5F5] rounded-full transform -translate-y-1/2  px-2 py-2"
             onClick={scrollLeft}
           >
             <svg
@@ -85,7 +85,7 @@ const TodayProducts = () => {
             </svg>
           </button>
           <button
-            className="mr-4 rounded-full transform -translate-y-1/2  px-4 py-2"
+            className="mr-3 bg-[#F5F5F5] rounded-full transform -translate-y-1/2  px-2 py-2"
             onClick={scrollRight}
           >
             <svg
@@ -117,7 +117,7 @@ const TodayProducts = () => {
         <div className="flex justify-center items-center">
           <button
             onClick={handleViewAllClick}
-            className={`${buttonStyle} bg-[#DB4444] flex font-[popins] justify-center text-[16px] items-center px-12 py-4 rounded text-white`}
+            className={`${buttonStyle} bg-[#DB4444] flex font-poppins justify-center text-[16px] items-center px-12 py-4 rounded text-white`}
           >
             View All Products
           </button>
