@@ -3,10 +3,10 @@ import { CiTwitter } from "react-icons/ci";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-black">
-        <div className="mx-auto w-full max-w-screen-xl grid px-4 py-8 grid-cols-5">
-          <div>
-            <span className="self-center text-xl font-semibold whitespace-nowrap text-white ">
+      <footer className="bg-black font-poppins">
+        <div className="w-auto flex gap-[80px] py-8  ml-[135px] mr-auto">
+          <div className="w-auto">
+            <span className="self-center text-xl  font-semibold whitespace-nowrap text-white ">
               Exclusive
             </span>
             <ul className="text-white">
@@ -16,7 +16,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline font-[12px]">
                   Get 10% off your first order
                 </a>
               </li>
@@ -25,12 +25,12 @@ const Footer = () => {
                   <input
                     type="search"
                     id="search-dropdown"
-                    className="block p-2.5 w-44 z-20 text-[15px] text-gray-900 bg-black border-white border rounded-lg font-[popins] "
+                    className="block p-2.5 w-52 z-20 text-[15px] text-gray-900 bg-black border-white border rounded-lg font-poppins "
                     placeholder="Enter your email"
                   />
                   <button
                     type="submit"
-                    className="absolute top-0 right-[70px] p-2.5 text-sm font-medium h-full text-white rounded-e-lg  "
+                    className="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white rounded-e-lg  "
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="w-auto">
             <h2 className="mb-6 text-md font-semibold text-white">Support</h2>
             <ul className="text-white text-sm">
               <li className="mb-4">
@@ -69,70 +69,70 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="w-auto">
             <h2 className="mb-6 text-md font-semibold text-white">Account</h2>
             <ul className="text-white text-sm">
               <li className="mb-4">
-                <a href="#" className="w-44">
+                <a href="#" className="w-44 hover:underline">
                   My Account
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="w-44">
+                <a href="#" className="w-44 hover:underline">
                   Login / Register
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="w-44">
+                <a href="#" className="w-44 hover:underline">
                   Cart
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="w-44">
+                <a href="#" className="w-44 hover:underline">
                   Wishlist
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="w-44">
+                <a href="#" className="w-44 hover:underline">
                   Shop
                 </a>
               </li>
             </ul>
           </div>
-          <div>
+          <div className="w-auto">
             <h2 className="mb-6 text-md font-semibold text-white">
               Quick Link
             </h2>
             <ul className="text-white text-sm">
               <li className="mb-4">
-                <a href="#" className="w-44">
+                <a href="#" className="w-44 hover:underline">
                   Privacy Policy
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="w-44">
+                <a href="#" className="w-44 hover:underline">
                   Terms of Use
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="w-44">
+                <a href="#" className="w-44 hover:underline">
                   FAQ
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="w-44">
+                <a href="#" className="w-44 hover:underline">
                   Contact
                 </a>
               </li>
             </ul>
           </div>
-          <div>
+          <div className="w-auto">
             <h2 className="mb-6 text-md font-semibold text-white">
               Download App
             </h2>
             <ul className="text-white text-sm">
               <li className="mb-4">
-                <p className="w-44 text-[10px]">
+                <p href="#" className="w-44 text-[10px]">
                   Save $3 with App New User Only
                 </p>
               </li>
@@ -166,10 +166,7 @@ const Footer = () => {
               <li className="mb-4">
                 <div className="w-44">
                   <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-                    <a
-                      href="#"
-                      className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-                    >
+                    <a href="#" className="text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"

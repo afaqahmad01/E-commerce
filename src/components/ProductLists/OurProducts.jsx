@@ -41,15 +41,15 @@ const OurProducts = () => {
   return (
     <>
       <div className="mb-20">
-        <h1 className="font-[600] not-italic border-l-[13px] mt-16 pl-6 ml-4 font-[popins] text-md mb-5 border-[#DB4444] text-[#DB4444]">
+        <h1 className="font-[600] not-italic border-l-[13px] mt-16 pl-6 ml-4 font-poppins text-md mb-5 border-[#DB4444] text-[#DB4444]">
           Our Products
         </h1>
-        <h1 className="not-italic ml-3 font-[Inter] text-3xl font-bold my-5 text-black">
+        <h1 className="not-italic ml-3 font-Inter text-3xl font-bold my-5 text-black">
           Explore Our Products
         </h1>
         <div className={`${buttonStyle} absolute right-14 -mt-10`}>
           <button
-            className="mr-4 rounded-full transform -translate-y-1/2    px-4 py-2"
+            className="mr-3 rounded-full bg-[#F5F5F5] transform -translate-y-1/2    px-2 py-2"
             onClick={scrollLeft}
           >
             <svg
@@ -69,7 +69,7 @@ const OurProducts = () => {
             </svg>
           </button>
           <button
-            className="mr-4 rounded-full transform -translate-y-1/2  px-4 py-2"
+            className="mr-3 bg-[#F5F5F5] rounded-full transform -translate-y-1/2  px-2 py-2"
             onClick={scrollRight}
           >
             <svg
@@ -108,7 +108,7 @@ const OurProducts = () => {
         <div className="flex justify-center items-center">
           <button
             onClick={handleViewAllClick}
-            className={`${buttonStyle} bg-[#DB4444] flex font-[popins] justify-center text-[16px] items-center px-12 py-4 rounded text-white`}
+            className={`${buttonStyle} bg-[#DB4444] flex font-poppins justify-center text-[16px] items-center px-12 py-4 rounded text-white`}
           >
             View All Products
           </button>
