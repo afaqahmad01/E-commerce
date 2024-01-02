@@ -41,10 +41,15 @@ const OurProducts = () => {
   return (
     <>
       <div className="mb-20">
-        <h1 className="font-[600] not-italic border-l-[13px] mt-16 pl-6 ml-4 font-poppins text-md mb-5 border-[#DB4444] text-[#DB4444]">
-          Our Products
-        </h1>
-        <h1 className="not-italic ml-3 font-Inter text-3xl font-bold my-5 text-black">
+        <div className="w-[140px] h-10 justify-start mt-16 items-center gap-4 inline-flex">
+          <div className="w-5 h-10 relative">
+            <div className="w-5 h-10 left-0 top-0 absolute bg-red-500 rounded" />
+          </div>
+          <div className="text-red-500 text-base font-semibold font-['Poppins'] leading-tight">
+            Our Products
+          </div>
+        </div>
+        <h1 className="not-italic mt-3 font-Inter text-3xl font-bold my-5 text-black">
           Explore Our Products
         </h1>
         <div className={`${buttonStyle} absolute right-14 -mt-10`}>

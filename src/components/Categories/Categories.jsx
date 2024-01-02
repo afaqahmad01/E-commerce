@@ -2,9 +2,8 @@ import { Card } from "antd";
 import "../../App.css";
 import { useState } from "react";
 import { CiMobile1, CiHeadphones, CiCamera } from "react-icons/ci";
-import { RiComputerLine } from "react-icons/ri";
-import { CgAppleWatch } from "react-icons/cg";
-import { IoGameControllerOutline } from "react-icons/io5";
+import { IoGameControllerOutline, IoWatchOutline } from "react-icons/io5";
+import { LiaTvSolid } from "react-icons/lia";
 
 const Categories = () => {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -15,11 +14,11 @@ const Categories = () => {
     },
     {
       name: "Computers",
-      iconKey: <RiComputerLine />,
+      iconKey: <LiaTvSolid />,
     },
     {
       name: "SmartWatches",
-      iconKey: <CgAppleWatch />,
+      iconKey: <IoWatchOutline />,
     },
     {
       name: "Camera",
@@ -42,10 +41,15 @@ const Categories = () => {
   return (
     <>
       <div className="mb-20">
-        <h1 className="font-[600] not-italic border-l-[13px] mt-10 pl-6 ml-6 font-poppins text-md mb-4 border-[#DB4444] text-[#DB4444]">
-          Categories
-        </h1>
-        <h1 className=" not-italic ml-6  font-Inter text-3xl font-bold mb-16 text-black  ">
+        <div className="w-[140px] h-10 justify-start items-center gap-4 inline-flex">
+          <div className="w-5 h-10 relative">
+            <div className="w-5 h-10 left-0 top-0 absolute bg-red-500 rounded" />
+          </div>
+          <div className="text-red-500 text-base font-semibold font-['Poppins'] leading-tight">
+            Categories
+          </div>
+        </div>
+        <h1 className=" not-italic mt-2  font-Inter text-3xl font-bold mb-16 text-black  ">
           Browse By Category
         </h1>
 

@@ -7,11 +7,16 @@ const MonthProducts = () => {
   return (
     <>
       <div className="mb-20">
-        <h1 className="font-[600] not-italic border-l-[13px] mt-16 pl-6 ml-4 font-poppins text-md mb-5 border-[#DB4444] text-[#DB4444]">
-          This Month
-        </h1>
+        <div className="w-[140px] h-10 justify-start items-center gap-4 inline-flex">
+          <div className="w-5 h-10 relative">
+            <div className="w-5 h-10 left-0 top-0 absolute bg-red-500 rounded" />
+          </div>
+          <div className="text-red-500 text-base font-semibold font-['Poppins'] leading-tight">
+            This Month
+          </div>
+        </div>
         <div className="flex">
-          <h1 className=" not-italic ml-3 font-Inter text-3xl font-bold my-5  text-black  ">
+          <h1 className=" not-italic mt-3 font-Inter text-3xl font-bold my-5  text-black  ">
             Best Selling Products
           </h1>
           <div className="absolute right-14 mt-4">
@@ -24,7 +29,7 @@ const MonthProducts = () => {
             </div>
           </div>
         </div>
-        <div className="ml-3  ">
+        <div className=" mt-6">
           <Products ProductsData={MonthData} newStyle={newStyle} />
         </div>
       </div>

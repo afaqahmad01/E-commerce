@@ -8,14 +8,24 @@ const emptyStarColor = "#a5a5a1";
 
 export const Product = [
   {
-    name: "HAVIT HV-G92 Gamepad",
+    id: 1,
+    name: " Havic HV G-92 Gamepad",
     iconKey: "https://i.imgur.com/urJWqiW.png",
+    images: [
+      "https://i.imgur.com/zl1XgYE.png",
+      "https://i.imgur.com/EZD3ocS.png",
+      "https://i.imgur.com/M2xwaeW.png",
+      "https://i.imgur.com/PLtUsEB.png",
+      "https://i.imgur.com/h8N4OYX.png",
+    ],
+    details:
+      " PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
     style: "h-[152px] w-[172px]",
     discount: "-40%",
     discountStyle: "ml-5 -mt-1",
     heartStyle: "-mt-1 mr-2",
     discountedPrice: "$120",
-    price: "$160",
+    price: "$192.00",
     StarColor1: filledStarColor,
     Star1: fullStar,
     StarColor2: filledStarColor,

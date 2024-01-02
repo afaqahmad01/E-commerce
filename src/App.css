@@ -15,6 +15,10 @@
   height: 350px;
 }
 
+.ant-card .ant-card-body {
+  padding: 1px;
+}
+
 .your-carousel-classname .slick-dots li button {
   width: 10px;
   height: 10px;
