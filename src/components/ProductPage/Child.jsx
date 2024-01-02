@@ -54,7 +54,7 @@ const Child = ({ MonthData }) => {
       <div className="flex gap-3">
         <p className="text-[#000] opacity-50">Account &nbsp;&nbsp;/</p>
         <p className="text-[#000] opacity-50">Gaming &nbsp;&nbsp;/</p>
-        <p>Havic HV G-92 Gamepad</p>
+        <p>{productToDisplay.name}</p>
       </div>
       <div>
         <div className="mt-10 flex gap-6">
