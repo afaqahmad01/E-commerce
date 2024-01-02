@@ -12,21 +12,21 @@ const Sale = () => {
           <div className="text-white font-poppins flex gap-4  font-[600] mt-[32px] ml-[56px] w-[320px] h-[62px] ">
             <div className="h-[62px] w-[62px] bg-white rounded-full flex flex-col justify-center items-center">
               <p className="text-black text-[15px] font-poppins">23</p>
-              <p className="text-black -mt-1 text-[13px] font-poppins">Hours</p>
+              <p className="text-black -mt-1 text-[10px] font-poppins">Hours</p>
             </div>
             <div className="h-[62px] w-[62px] bg-white rounded-full flex flex-col justify-center items-center">
               <p className="text-black text-[15px] font-poppins">05</p>
-              <p className="text-black -mt-1 text-[13px] font-poppins">Days</p>
+              <p className="text-black -mt-1 text-[10px] font-poppins">Days</p>
             </div>
             <div className="h-[62px] w-[62px] bg-white rounded-full flex flex-col justify-center items-center">
               <p className="text-black text-[15px] font-poppins">59</p>
-              <p className="text-black -mt-1 text-[13px] font-poppins">
+              <p className="text-black -mt-1 text-[10px] font-poppins">
                 Minutes
               </p>
             </div>
             <div className="h-[62px] w-[62px] bg-white rounded-full flex flex-col justify-center items-center">
               <p className="text-black text-[15px] font-poppins">35</p>
-              <p className="text-black -mt-1 text-[13px] font-poppins">
+              <p className="text-black -mt-1 text-[10px] font-poppins">
                 seconds
               </p>
             </div>
